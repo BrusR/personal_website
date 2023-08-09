@@ -22,3 +22,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# For the cdk 
+
+.swp
+package-lock.json
+.pytest_cache
+*.egg-info
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+*.env
+*.venv
+env/
+venv/
+
+
+# CDK Context & Staging files
+*/.cdk.staging/
+*/cdk.out/
