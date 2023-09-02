@@ -14,7 +14,9 @@ import Contact from "./Contact";
 import Form from "./Form";
 import Project2 from "./Project2";
 import Stack from "./Stack";
+import Visitors from "./Visitors";
 export{
+    Visitors,
     Stack,
     Form,
     Navbar,

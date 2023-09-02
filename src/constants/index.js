@@ -1,5 +1,6 @@
 import { people01, people02, people03, facebook, linkedin, twitter, airbnb, binance, coinbase, dropbox, 
-  send, shield, star, python_logo, solutions_arquitect, iot, github, logo_aws, logo_python, logo_youtube  } from "../assets";
+  send, shield, star, python_logo, solutions_arquitect, iot, github, logo_aws, logo_python, logo_docker, logo_kubernetes,
+  logo_postgresql } from "../assets";
 
 export const navLinks = [
   {
@@ -51,7 +52,7 @@ export const habilities = [
     title: "AWS",
     content:
       "I've been learning Amazon Web Services since 2022. I received the Solutions Arquitect \
-      Associate certificate in *** of 2023. All my projects (including this) are deployed and \
+      Associate certificate in September of 2023. All my projects (including this) are deployed and \
       hosted in AWS",
   },
   {
@@ -59,8 +60,8 @@ export const habilities = [
     icon: python_logo,
     title: "Python",
     content:
-      "I started my python journey since I was in the university. I'm comfortable writing scripts \
-      for API's, basic data science and backend development.",
+      "I started my python journey since I began the university. I'm comfortable writing scripts \
+      for API's, basic data science, CDK and backend development.",
   },
   {
     id: "hability-3",
@@ -236,6 +237,18 @@ export const stacks = [
   },
   {
     id: "stack-3",
-    logo: logo_youtube,
+    logo: logo_docker,
+  },
+  {
+    id: "stack-4",
+    logo: logo_kubernetes,
+  },
+  {
+    id: "stack-5",
+    logo: logo_postgresql,
   },
 ];
+export const links_project_1 = {
+  github: "https://github.com/BrusR/personal_website",
+  live: "#",
+}

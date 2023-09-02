@@ -22,7 +22,7 @@ const FeatureCard = ({icon, title, content, index}) => (
 const About = () => (
     <section id='about' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>Some things<br className='sm:block hidden'/>
+        <h2 className={styles.heading2}>Some things <br className='sm:block hidden'/>
           about me</h2>
         <p className={styles.paragraph + ' max-w-[470px] mt-5'}>
         With a natural love for Python programming, AWS, and IOT, 

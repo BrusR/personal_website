@@ -34,14 +34,22 @@ import github from "./github.png"
 import lambda from "./lambda.svg"
 import ecs from "./ecs.svg"
 import eventbridge from "./eventbridge.svg"
+import cloudformation from "./cloudformation.svg"
 import logo_aws from "./logo_aws.svg"
 import logo_python from "./logo_python.svg"
 import logo_youtube from "./logo_youtube.svg"
+import logo_kubernetes from "./logo_kubernetes.svg"
+import logo_docker from "./logo_docker.svg"
+import logo_postgresql from "./logo_postgresql.svg"
 export {
+  logo_postgresql,
+  logo_docker,
+  logo_kubernetes,
   logo_aws,
   logo_python,
   logo_youtube,
   lambda,
+  cloudformation,
   ecs,
   eventbridge,
   github,

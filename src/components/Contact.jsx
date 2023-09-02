@@ -9,7 +9,7 @@ const Contact = () => (
         <p className={styles.paragraph + ' max-w-[470px] mt-5'}>
             Thank you for taking the time to explore my portfolio. If you're interested in collaborating, 
             have a project in mind, or just want to connect, I'd love to hear from you. Feel free to reach 
-            out using the convenient form to send me a message directly. 
+            out using the form to send me a message directly. 
         </p>
         <div className='w-full flex justify-between items-center mt-4 md:flex-row flex-col pt-6'>
           <div className='flex flex-row md:mt-0 mt-6'>
@@ -18,7 +18,7 @@ const Contact = () => (
                 key={social.id} 
                 src={social.icon} 
                 alt={social.id} 
-                className={'w-[40px] h-[40px] object-contain cursor-pointer ' + (index !== socialMedia.length -1 ? 'mr-6' : 'mr-0')}/></a>
+                className={'w-[40px] h-[40px] object-contain cursor-pointer hover:scale-125 ' + (index !== socialMedia.length -1 ? 'mr-6' : 'mr-0')}/></a>
             ))}
           </div>
         </div>

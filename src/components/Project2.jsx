@@ -13,10 +13,27 @@ const Project2 = () => (
           This project features many serverless services such as Lambda,
           ECS Fargate, SNS and Eventbridge.
         </p>
-        <div className='flex flex-row flex-wrap sm:mt-10 mt-6 divide-x w-full'>
+        <div className='flex flex-row flex-wrap sm:mt-6 mt-4 w-full'>
+          <a href="#" className='w-1/2'>
+            <h1 className='font-poppins font-normal text-dimWhite text-[18px] text-center hover:text-blue-100 hover:underline hover:scale-125'>
+              View in code
+            </h1>
+          </a>
+          <a href="#" className='w-1/2'>
+            <h1 className='font-poppins font-normal text-dimWhite text-[18px] text-center hover:text-blue-100 hover:underline hover:scale-125'>
+              Live deployment
+            </h1>
+          </a>
+        </div>
+        <div className='flex flex-row flex-wrap sm:mt-6 mt-4 w-full'>
           <img src={lambda} alt='lambda' className='w-1/3 h-[100px] object-contain cursor-pointer'/>
           <img src={ecs} alt='ecs' className='w-1/3 h-[100px] object-contain cursor-pointer'/>
           <img src={eventbridge} alt='eventbridge' className='w-1/3 h-[100px] object-contain cursor-pointer'/>
+        </div>
+        <div className='flex flex-row flex-wrap sm:mt-3 mt-2 w-full'>
+          <h1 className='w-1/3 font-poppins font-normal text-dimWhite text-[18px] text-center'>Lambda</h1>
+          <h1 className='w-1/3 font-poppins font-normal text-dimWhite text-[18px] text-center'>ECS</h1>
+          <h1 className='w-1/3 font-poppins font-normal text-dimWhite text-[18px] text-center'>Eventbridge</h1>
         </div>
         <Button style='mt-10'/>
       </div>
