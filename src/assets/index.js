@@ -24,7 +24,7 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import me_professional from "./me_professional.png"
-import logo_personal from "./logo_personal.png"
+import logo_personal from "./logo_personal_2.png"
 import solutions_arquitect from "./solutions_arquitect.png"
 import python_logo from "./python_logo.png"
 import iot from "./iot.png"
@@ -35,13 +35,23 @@ import lambda from "./lambda.svg"
 import ecs from "./ecs.svg"
 import eventbridge from "./eventbridge.svg"
 import cloudformation from "./cloudformation.svg"
-import logo_aws from "./logo_aws.svg"
-import logo_python from "./logo_python.svg"
+import logo_aws from "./aws_logo.svg"
+import logo_python from "./python_logo.svg"
 import logo_youtube from "./logo_youtube.svg"
-import logo_kubernetes from "./logo_kubernetes.svg"
-import logo_docker from "./logo_docker.svg"
-import logo_postgresql from "./logo_postgresql.svg"
+import logo_kubernetes from "./Kubernetes_logo.svg"
+import logo_docker from "./docker_logo.svg"
+import logo_postgresql from "./postgres_logo.svg"
+import kubernetes_administrator from "./kubernetes_administrator.svg"
+import loading_image from "./loading_image.svg"
+import logo_git from "./logo_git.svg"
+import SPA_architecture from "./SPA_architecture.png"
+import SPA_architecture_2 from "./SPA_architecture_only_diagram.png"
 export {
+  SPA_architecture,
+  SPA_architecture_2,
+  logo_git,
+  loading_image,
+  kubernetes_administrator,
   logo_postgresql,
   logo_docker,
   logo_kubernetes,

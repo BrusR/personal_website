@@ -29,14 +29,14 @@ In this tutorial, it is assumed that you have a succesfull installation of the
 CDK and the AWS CLI tool. Moreover you should have access to an AWS account and
 have your credentials already set.
 
-You create a new AWS CDK project invoking cdk init in an empty directory.
+You create a new AWS CDK project by invoking "cdk init" in an empty directory.
 ```
 mkdir cdk
 cd cdk
 cdk init app --language python
 ```
 
-Activate the virtual environment if not activated already.
+Activate the virtual environment if not already activated.
 ```
 source .venv/bin/activate
 ```
@@ -72,4 +72,4 @@ The cdk project deploys a single page application without a backend.The main AWS
 services it uses are S3 to store the files, Cloudfront to distribute the files and 
 Cloudformation to build the stack. 
 
-![alt text](https://d1nm758bma1w92.cloudfront.net/github_images/Personal_page_arquitecture.png)
+![alt text](https://d1nm758bma1w92.cloudfront.net/github_images/SPA_architecture.png)

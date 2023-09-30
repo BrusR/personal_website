@@ -25,7 +25,7 @@ const About = () => (
         <h2 className={styles.heading2}>Some things <br className='sm:block hidden'/>
           about me</h2>
         <p className={styles.paragraph + ' max-w-[470px] mt-5'}>
-        With a natural love for Python programming, AWS, and IOT, 
+        With a natural love for Python programming and the cloud, 
         I am committed to architecting cutting-edge cloud solutions that revolutionize 
         the way we interact with technology. </p>
         <Button style='mt-10'/>

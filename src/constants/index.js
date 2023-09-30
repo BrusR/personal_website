@@ -1,6 +1,6 @@
 import { people01, people02, people03, facebook, linkedin, twitter, airbnb, binance, coinbase, dropbox, 
   send, shield, star, python_logo, solutions_arquitect, iot, github, logo_aws, logo_python, logo_docker, logo_kubernetes,
-  logo_postgresql } from "../assets";
+  logo_postgresql, kubernetes_administrator, logo_git } from "../assets";
 
 export const navLinks = [
   {
@@ -51,25 +51,24 @@ export const habilities = [
     icon: solutions_arquitect,
     title: "AWS",
     content:
-      "I've been learning Amazon Web Services since 2022. I received the Solutions Arquitect \
-      Associate certificate in September of 2023. All my projects (including this) are deployed and \
-      hosted in AWS",
+      "I earned the AWS Certified Solutions Arquitect - Associate certification on September 25, 2023.\
+       All my projects (including this) are deployed and hosted on AWS",
   },
   {
     id: "hability-2",
     icon: python_logo,
     title: "Python",
     content:
-      "I started my python journey since I began the university. I'm comfortable writing scripts \
-      for API's, basic data science, CDK and backend development.",
+      "I started my python journey 5 years ago and I have no regrets on choosing it as my first language. \
+      I'm comfortable writing scripts for API's, basic data science, CDK and backend development.",
   },
   {
     id: "hability-3",
-    icon: iot,
-    title: "IOT",
+    icon: kubernetes_administrator,
+    title: "Kubernetes",
     content:
-      "In my spare time I enjoy building innovative IOT solutions to simple problems. My most recent \
-      project features a ***",
+      "Since Kubernetes is a broad topic in orchestration solutions for containerized applications, \
+      I'm learning it to become a certified administrator.",
   },
 ];
 
@@ -192,16 +191,6 @@ export const socialMedia = [
   },
   {
     id: "social-media-2",
-    icon: facebook,
-    link: "https://www.facebook.com/",
-  },
-  {
-    id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/in/brus-rojas-020311239/",
   },
@@ -247,6 +236,10 @@ export const stacks = [
     id: "stack-5",
     logo: logo_postgresql,
   },
+  {
+    id: "stack-6",
+    logo:logo_git,
+  }
 ];
 export const links_project_1 = {
   github: "https://github.com/BrusR/personal_website",

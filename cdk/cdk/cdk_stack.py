@@ -6,12 +6,19 @@ from aws_cdk import (
     aws_s3 as s3,
     aws_s3_deployment as s3_deployment,
     aws_cloudfront as cfn,
+    aws_certificatemanager as acm,
 )
 
 
-class CdkStack(Stack):
+class PersonalWebsite(Stack):
 
-    def __init__(self, scope: Construct, construct_id: str, **kwargs) -> None:
+    def __init__(
+            self,
+            scope: Construct,
+            construct_id: str,
+            certificate_arn: str,
+            domain_name: str,
+            **kwargs) -> None:
         super().__init__(scope, construct_id, **kwargs)
 
         # A removal policiy should be added in production to protect the S3
@@ -37,11 +44,15 @@ class CdkStack(Stack):
             principals=[iam.CanonicalUserPrincipal(
                 oai.cloud_front_origin_access_identity_s3_canonical_user_id)],
         ))
-
+        # Reference certificate
+        certificate = acm.Certificate.from_certificate_arn(
+            self, "certificate", certificate_arn=certificate_arn
+        )
         # Allow all should be changed to REDIRECT_TO_HTTPS later
         distribution = cfn.CloudFrontWebDistribution(
             scope=self,
             id="distribution-cfn",
+            default_root_object="index.html",
             origin_configs=[cfn.SourceConfiguration(
                 s3_origin_source=cfn.S3OriginConfig(
                     s3_bucket_source=bucket,
@@ -51,7 +62,13 @@ class CdkStack(Stack):
                     is_default_behavior=True,
                     viewer_protocol_policy=cfn.ViewerProtocolPolicy.ALLOW_ALL,
                 )]
-            )]
+            )],
+            viewer_certificate=cfn.ViewerCertificate.from_acm_certificate(
+                certificate=certificate,
+                aliases=[domain_name],
+                security_policy=cfn.SecurityPolicyProtocol.TLS_V1_2_2019,
+                ssl_method=cfn.SSLMethod.SNI,
+            )
         )
 
         # Deploy site contents to S3 bucket
