@@ -9,22 +9,20 @@ const App = () => (
           <Navbar/>
         </div>
       </div>
-
       <div className={'bg-primary ' + styles.flexStart}>
         <div className={styles.boxWidth}>
           <Hero/>
         </div>
       </div>
-
       <div className={'bg-primary '+ styles.paddingX + ' ' + styles.flexStart}>
         <div className={styles.boxWidth}>
           <Stats/>
-          <Visitors/>
+          {/* <Visitors/> */}
           <About/>
           <Stack/>
           <Project1/>
           <Project2/>
-          <Contact/>
+          {/* <Contact/> */}
           <Footer/>
         </div>
       </div>
